@@ -134,6 +134,8 @@ func resetAdmin(icentral *imqsauth.ImqsCentral) {
 	var err error
 	icentral.Central, err = authaus.NewCentralFromConfig(icentral.Config)
 	if err == nil {
+		defer icentral.Central.Close()
+
 		password := authaus.RandomString(10, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
 		adminOK := false
 
@@ -178,8 +180,6 @@ func resetAdmin(icentral *imqsauth.ImqsCentral) {
 			permit.Roles = authaus.EncodePermit(pgroups)
 			icentral.Central.SetPermit("imqsadmin", permit)
 		}
-
-		icentral.Central.Close()
 	} else {
 		fmt.Printf("Error: %v\n", err)
 	}

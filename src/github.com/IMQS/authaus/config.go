@@ -15,6 +15,9 @@ import (
 Full populated config:
 
 {
+	"Log": {
+		"Filename":		"/var/log/authaus/authaus.log"
+	},
 	"HTTP": {
 		"CookieName":	"session",
 		"CookieSecure":	true,
@@ -113,6 +116,10 @@ type ConfigHTTP struct {
 	Bind         string
 }
 
+type ConfigLog struct {
+	Filename string
+}
+
 type ConfigPermitDB struct {
 	DB DBConnection
 }
@@ -136,6 +143,7 @@ type ConfigAuthenticator struct {
 Configuration information. This is typically loaded from a .json config file.
 */
 type Config struct {
+	Log           ConfigLog
 	HTTP          ConfigHTTP
 	PermitDB      ConfigPermitDB
 	SessionDB     ConfigSessionDB
