@@ -16,7 +16,11 @@ this gratuitous forkage.
 ## Building
 To build imqsauth.exe, run
 
+	env
 	go install github.com/IMQS/imqsauth
+
+The 'env' script sets your only GOPATH to be the current directory,
+which forces the build to happen right here.
 
 You should now have `bin/imqsauth.exe`
 
