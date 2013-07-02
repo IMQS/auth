@@ -35,6 +35,7 @@ case ARGV[0]
 		exec_or_die( "go test -race github.com/IMQS/imqsauth/imqsauth -test.cpu 2" )
 		exec_or_die( "go test github.com/IMQS/authaus -test.cpu 2" )
 		exec_or_die( "go test github.com/IMQS/imqsauth/imqsauth -test.cpu 2" )
+		exec_or_die( "ruby src/github.com/IMQS/imqsauth/resttest.rb" )
 	when "test_integration" then
 		# TODO: try logging into our IMQS domain (or whatever's appropriate for a CI box)
 end
