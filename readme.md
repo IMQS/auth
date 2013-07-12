@@ -3,15 +3,12 @@ IMQS Authentication Builder
 
 This is an umbrella project to host the IMQS authentication/authorization system.
 
-All of the source code is stored inside this repo verbatim. The canonical source
-control locations of the components should be obvious by browing the 'src' directory.
+We use git sub-modules to reference the dependencies that are available via git.
 
-Forking the source code from the canonical repositories into this umbrella repository
-is an unfortunate result of the 'go' tool having no way to express repository versions in 
-import dependencies.
-
-Hopefully once repository versions are expressible in Go's import tool, we can do away with
-this gratuitous forkage.
+Some of the dependencies are available only via mercurial. We make copies of these
+source files, and store them verbatim. One could also use git-hg, but we choose not
+to, so that our development/CI environment has one less tool that we need to worry
+about.
 
 ## Building
 To build imqsauth.exe, run
@@ -31,13 +28,34 @@ To run it and create a local postgres database, do
 You will need to have the appropriate postgres login setup on your database. See the 
 `example-local.conf` file for those details.
 
-Next, reset the imqsadmin user
+Next, reset the authorization group 'admin'
 
-	bin\imqsauth -c example-local.conf resetadmin
+	bin\imqsauth -c example-local.conf resetauthgroups
 
-This will create the imqsadmin user
+Create a user called 'admin'
 
-..... I see now that we're going to have to add the ability to grant admin rights
-to any user, since we don't want to have to ask every client to add a special
-'imqsadmin' user to their Active Directory. We should be able to promote any
-user of our choosing to admin role, via the console.
+	TODO......
+
+## Updating the git dependencies
+All git-based dependencies use the regular git sub-module mechanism, so for example
+if you want to update the `lib\pq` library, you do
+
+	cd src\github.com\lib\pq
+	git pull
+	cd ..\..\..\..
+	git add src\github.com\lib\pq
+	git commit -m "Updated lib/pq"
+
+## Updating the Mercurial dependencies
+To update the mercurial dependencies, run
+
+	env
+	rmdir /s /q src\code.google.com
+	go get code.google.com/p/go.crypto  
+	go get code.google.com/p/winsvc
+	rmdir /s /q src\code.google.com\p\go.crypto\.hg
+	rmdir /s /q src\code.google.com\p\winsvc\.hg
+
+The commands are illustrated here verbatim instead of in a batch file, so that you
+are aware of exactly what you're doing. Since one does not need to update these
+dependencies often, this is probably OK.

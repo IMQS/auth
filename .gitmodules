@@ -1,0 +1,21 @@
+[submodule "src/github.com/IMQS/authaus"]
+	path = src/github.com/IMQS/authaus
+	url = git@github.com:IMQS/authaus
+[submodule "src/github.com/IMQS/imqsauth"]
+	path = src/github.com/IMQS/imqsauth
+	url = git@github.com:IMQS/imqsauth
+[submodule "src/github.com/lib/pq"]
+	path = src/github.com/lib/pq
+	url = git@github.com:/lib/pq
+[submodule "src/github.com/mavericknz/asn1-ber"]
+	path = src/github.com/mavericknz/asn1-ber
+	url = git@github.com:/mavricknz/asn1-ber
+[submodule "src/github.com/mavericknz/ldap"]
+	path = src/github.com/mavericknz/ldap
+	url = git@github.com:/mavricknz/ldap
+[submodule "src/github.com/mavricknz/ldap"]
+	path = src/github.com/mavricknz/ldap
+	url = git@github.com:/mavricknz/ldap
+[submodule "src/github.com/mavricknz/asn1-ber"]
+	path = src/github.com/mavricknz/asn1-ber
+	url = git@github.com:/mavricknz/asn1-ber
