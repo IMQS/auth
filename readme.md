@@ -21,20 +21,31 @@ which forces the build to happen right here.
 
 You should now have `bin/imqsauth.exe`
 
-To run it and create a local postgres database, do
+## Testing
+Look inside imqs-build.rb to see the various tests that are run by the CI system.
+
+## Running
+To run imqsauth and create a local postgres database, do
 
 	bin\imqsauth -c example-local.conf createdb
 
 You will need to have the appropriate postgres login setup on your database. See the 
 `example-local.conf` file for those details.
 
-Next, reset the authorization group 'admin'
+Next, reset the authorization groups 'admin' and 'enabled'
 
 	bin\imqsauth -c example-local.conf resetauthgroups
 
-Create a user called 'admin'
+Create a user called 'root'
 
-	TODO......
+	bin\imqsauth -c example-local.conf createuser root PASSWORD
+
+Grant the 'root' user 'admin' and 'enabled' rights
+
+	bin\imqsauth -c example-local.conf permgroupadd root admin
+	bin\imqsauth -c example-local.conf permgroupadd root enabled
+
+To create a regular user, 
 
 ## Updating the git dependencies
 All git-based dependencies use the regular git sub-module mechanism, so for example
