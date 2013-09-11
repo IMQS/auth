@@ -11,13 +11,22 @@ to, so that our development/CI environment has one less tool that we need to wor
 about.
 
 ## Building
+
+Make sure you have all submodules cloned. A full clone from scratch would look like this:
+
+	git clone git@github.com:IMQS/auth.git
+	cd auth
+	git submodule init
+	git submodule update
+
 To build imqsauth.exe, run
 
 	env
 	go install github.com/IMQS/imqsauth
 
 The 'env' script sets your only GOPATH to be the current directory,
-which forces the build to happen right here.
+which forces the build to happen right here. If you're on Unix, then
+you'll have to do `export GOPATH=$PWD` instead of `env`.
 
 You should now have `bin/imqsauth.exe`
 
@@ -45,7 +54,12 @@ Grant the 'root' user 'admin' and 'enabled' rights
 	bin\imqsauth -c example-local.conf permgroupadd root admin
 	bin\imqsauth -c example-local.conf permgroupadd root enabled
 
-To create a regular user, 
+To create a regular user, you would do the same thing,
+except leave out the `permgroupadd root admin` step.
+
+To run the server:
+
+	bin\imqsauth -c example-local.conf run
 
 ## Updating the git dependencies
 All git-based dependencies use the regular git sub-module mechanism, so for example
