@@ -33,6 +33,12 @@ You should now have `bin/imqsauth.exe`
 ## Testing
 Look inside imqs-build.rb to see the various tests that are run by the CI system.
 
+This is an example of how to run tests off the command line:
+
+	set GOPATH=%CD%
+	go test -race github.com/IMQS/authaus -test.cpu 2
+	go test -race github.com/IMQS/imqsauth/imqsauth -test.cpu 2
+
 ## Running
 To run imqsauth and create a local postgres database, do
 
