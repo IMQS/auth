@@ -32,8 +32,10 @@ case ARGV[0]
 		# but it's a likely thing to do in future. ie.. make some stress tests run only with -race off,
 		# because -race uses 10x the memory and is 10x slower.
 		exec_or_die( "go test -race github.com/IMQS/authaus -test.cpu 2" )
+		exec_or_die( "go test -race github.com/IMQS/authaus -test.cpu 2 -backend_postgres" )
 		exec_or_die( "go test -race github.com/IMQS/imqsauth/imqsauth -test.cpu 2" )
 		exec_or_die( "go test github.com/IMQS/authaus -test.cpu 2" )
+		exec_or_die( "go test github.com/IMQS/authaus -test.cpu 2 -backend_postgres" )
 		exec_or_die( "go test github.com/IMQS/imqsauth/imqsauth -test.cpu 2" )
 		exec_or_die( "ruby src/github.com/IMQS/imqsauth/resttest.rb" )
 	when "test_integration" then
