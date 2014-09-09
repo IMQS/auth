@@ -19,3 +19,6 @@
 [submodule "src/github.com/mavricknz/asn1-ber"]
 	path = src/github.com/mavricknz/asn1-ber
 	url = git@github.com:/mavricknz/asn1-ber
+[submodule "src/github.com/IMQS/cli"]
+	path = src/github.com/IMQS/cli
+	url = git@github.com:IMQS/cli.git
