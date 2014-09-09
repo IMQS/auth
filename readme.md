@@ -37,36 +37,37 @@ This is an example of how to run tests off the command line:
 
 	set GOPATH=%CD%
 	go test -race github.com/IMQS/authaus -test.cpu 2
+	go test -race github.com/IMQS/authaus -test.cpu 2 -backend_postgres
 	go test -race github.com/IMQS/imqsauth/imqsauth -test.cpu 2
 	ruby src/github.com/IMQS/imqsauth/resttest.rb
 
 ## Running
 To run imqsauth and create a local postgres database, do
 
-	bin\imqsauth -c example-local.conf createdb
+	bin\imqsauth -c=example-local.conf createdb
 
 You will need to have the appropriate postgres login setup on your database. See the 
 `example-local.conf` file for those details.
 
 Next, reset the authorization groups 'admin' and 'enabled'
 
-	bin\imqsauth -c example-local.conf resetauthgroups
+	bin\imqsauth -c=example-local.conf resetauthgroups
 
 Create a user called 'root'
 
-	bin\imqsauth -c example-local.conf createuser root PASSWORD
+	bin\imqsauth -c=example-local.conf createuser root PASSWORD
 
 Grant the 'root' user 'admin' and 'enabled' rights
 
-	bin\imqsauth -c example-local.conf permgroupadd root admin
-	bin\imqsauth -c example-local.conf permgroupadd root enabled
+	bin\imqsauth -c=example-local.conf permgroupadd root admin
+	bin\imqsauth -c=example-local.conf permgroupadd root enabled
 
 To create a regular user, you would do the same thing,
 except leave out the `permgroupadd root admin` step.
 
 To run the server:
 
-	bin\imqsauth -c example-local.conf run
+	bin\imqsauth -c=example-local.conf run
 
 ## Updating the git dependencies
 All git-based dependencies use the regular git sub-module mechanism, so for example
