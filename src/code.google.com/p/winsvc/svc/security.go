@@ -2,6 +2,8 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
+// +build windows
+
 package svc
 
 import (
@@ -50,10 +52,10 @@ func allocSid(subAuth0 uint32) (*syscall.SID, error) {
 	return sid, nil
 }
 
-// IsAnIinteractiveSession determines if calling process is running interactively.
+// IsAnInteractiveSession determines if calling process is running interactively.
 // It queries the process token for membership in the Interactive group.
 // http://stackoverflow.com/questions/2668851/how-do-i-detect-that-my-application-is-running-as-service-or-in-an-interactive-s
-func IsAnIinteractiveSession() (bool, error) {
+func IsAnInteractiveSession() (bool, error) {
 	interSid, err := allocSid(winapi.SECURITY_INTERACTIVE_RID)
 	if err != nil {
 		return false, err
@@ -87,4 +89,10 @@ func IsAnIinteractiveSession() (bool, error) {
 		}
 	}
 	return false, nil
+}
+
+// IsAnIinteractiveSession is a misspelled version of IsAnInteractiveSession.
+// Do not use. It is kept here so we do not break existing code.
+func IsAnIinteractiveSession() (bool, error) {
+	return IsAnInteractiveSession()
 }

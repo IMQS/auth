@@ -2,6 +2,8 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
+// +build windows
+
 // Example service program that beeps. It demonstrates how to
 // create a service and install / remove it on a computer.
 // It also shows how to stop / start / pause / continue any service,
@@ -31,7 +33,7 @@ func usage(errmsg string) {
 func main() {
 	const svcName = "myservice"
 
-	isIntSess, err := svc.IsAnIinteractiveSession()
+	isIntSess, err := svc.IsAnInteractiveSession()
 	if err != nil {
 		log.Fatalf("failed to determine if we are running in an interactive session: %v", err)
 	}

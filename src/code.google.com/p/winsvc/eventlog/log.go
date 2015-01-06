@@ -2,6 +2,8 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
+// +build windows
+
 // Package eventlog implements access to Windows event log.
 //
 package eventlog
@@ -44,25 +46,24 @@ func (l *Log) Close() error {
 }
 
 func (l *Log) report(etype uint16, eid uint32, msg string) error {
-	if eid < 1 || eid > 100 {
-		// EventCreate executable has messages for these only.
-		return errors.New("event id must be between 1 and 1000")
-	}
 	ss := []*uint16{syscall.StringToUTF16Ptr(msg)}
 	return winapi.ReportEvent(l.Handle, etype, 0, eid, 0, 1, 0, &ss[0], nil)
 }
 
 // Info writes an information event msg with event id eid to the end of event log l.
+// eid must be between 1 and 1000 if using EventCreate.exe as event message file.
 func (l *Log) Info(eid uint32, msg string) error {
 	return l.report(winapi.EVENTLOG_INFORMATION_TYPE, eid, msg)
 }
 
 // Warning writes an warning event msg with event id eid to the end of event log l.
+// eid must be between 1 and 1000 if using EventCreate.exe as event message file.
 func (l *Log) Warning(eid uint32, msg string) error {
 	return l.report(winapi.EVENTLOG_WARNING_TYPE, eid, msg)
 }
 
 // Error writes an error event msg with event id eid to the end of event log l.
+// eid must be between 1 and 1000 if using EventCreate.exe as event message file.
 func (l *Log) Error(eid uint32, msg string) error {
 	return l.report(winapi.EVENTLOG_ERROR_TYPE, eid, msg)
 }

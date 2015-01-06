@@ -22,3 +22,6 @@
 [submodule "src/github.com/IMQS/cli"]
 	path = src/github.com/IMQS/cli
 	url = git@github.com:IMQS/cli.git
+[submodule "src/golang.org/x/crypto"]
+	path = src/golang.org/x/crypto
+	url = https://go.googlesource.com/crypto

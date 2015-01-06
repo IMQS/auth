@@ -84,9 +84,7 @@ To update the mercurial dependencies, run
 
 	env
 	rmdir /s /q src\code.google.com
-	go get code.google.com/p/go.crypto  
 	go get code.google.com/p/winsvc
-	rmdir /s /q src\code.google.com\p\go.crypto\.hg
 	rmdir /s /q src\code.google.com\p\winsvc\.hg
 
 The commands are illustrated here verbatim instead of in a batch file, so that you
