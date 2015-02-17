@@ -31,6 +31,11 @@ case ARGV[0]
 		exec_or_die( "go install github.com/IMQS/imqsauth" )
 		FileUtils.cp( "bin/imqsauth.exe", out_dir + '/bin/' )
 	when "test_unit" then
+		# The very first test that executes against the postgres backend must run with
+		# just 1 CPU. This is to ensure that if migrations need to run, then they do so
+		# before anything else runs.
+		exec_or_die( "go test github.com/IMQS/authaus -test.cpu 1 -backend_postgres" )
+
 		# At present the tests behave no differently when run with -race and without,
 		# but it's a likely thing to do in future. ie.. make some stress tests run only with -race off,
 		# because -race uses 10x the memory and is 10x slower.
