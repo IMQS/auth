@@ -24,7 +24,10 @@ def exec_or_die( cmd, current_dir = nil )
 end
 
 case ARGV[0]
-	when "prepare"	then
+	when "build" then
+		# 'build' exists solely for CI integration. We can't use "prepare" in that case, because "../out/bin" doesn't exist on a CI build.
+		exec_or_die( "go install github.com/IMQS/imqsauth" )
+	when "prepare" then
 		exec_or_die( "go install github.com/IMQS/imqsauth" )
 		FileUtils.cp( "bin/imqsauth.exe", out_dir + '/bin/' )
 	when "test_unit" then
