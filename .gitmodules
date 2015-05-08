@@ -25,3 +25,6 @@
 [submodule "src/golang.org/x/crypto"]
 	path = src/golang.org/x/crypto
 	url = https://go.googlesource.com/crypto
+[submodule "src/github.com/lumberjack"]
+	path = src/github.com/lumberjack
+	url = git@github.com:/natefinch/lumberjack
