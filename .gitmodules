@@ -28,3 +28,6 @@
 [submodule "src/github.com/lumberjack"]
 	path = src/github.com/lumberjack
 	url = git@github.com:/natefinch/lumberjack
+[submodule "src/github.com/IMQS/serviceauth"]
+	path = src/github.com/IMQS/serviceauth
+	url = git@github.com:/IMQS/serviceauth
