@@ -31,3 +31,12 @@
 [submodule "src/github.com/IMQS/serviceauth"]
 	path = src/github.com/IMQS/serviceauth
 	url = git@github.com:/IMQS/serviceauth
+[submodule "src/github.com/IMQS/yfws"]
+	path = src/github.com/IMQS/yfws
+	url = git@github.com:IMQS/yfws.git
+[submodule "src/github.com/clbanning/mxj"]
+	path = src/github.com/clbanning/mxj
+	url = git@github.com:clbanning/mxj.git
+[submodule "src/github.com/fatih/structs"]
+	path = src/github.com/fatih/structs
+	url = git@github.com:fatih/structs.git
