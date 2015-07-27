@@ -25,9 +25,12 @@
 [submodule "src/golang.org/x/crypto"]
 	path = src/golang.org/x/crypto
 	url = https://go.googlesource.com/crypto
-[submodule "src/github.com/lumberjack"]
-	path = src/github.com/lumberjack
-	url = git@github.com:/natefinch/lumberjack
 [submodule "src/github.com/IMQS/serviceauth"]
 	path = src/github.com/IMQS/serviceauth
 	url = git@github.com:/IMQS/serviceauth
+[submodule "src/gopkg.in/natefinch/lumberjack.v2"]
+	path = src/gopkg.in/natefinch/lumberjack.v2
+	url = git@github.com:natefinch/lumberjack
+[submodule "src/github.com/IMQS/log"]
+	path = src/github.com/IMQS/log
+	url = git@github.com:IMQS/log
