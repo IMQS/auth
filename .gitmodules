@@ -43,3 +43,6 @@
 [submodule "src/github.com/fatih/structs"]
 	path = src/github.com/fatih/structs
 	url = git@github.com:fatih/structs.git
+[submodule "src/github.com/BurntSushi/migration"]
+	path = src/github.com/BurntSushi/migration
+	url = https://github.com/BurntSushi/migration
