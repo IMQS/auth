@@ -43,6 +43,9 @@
 [submodule "src/github.com/fatih/structs"]
 	path = src/github.com/fatih/structs
 	url = git@github.com:fatih/structs.git
+[submodule "net"]
+	path = src/golang.org/x/net
+	url = https://go.googlesource.com/net
 [submodule "src/github.com/BurntSushi/migration"]
 	path = src/github.com/BurntSushi/migration
 	url = https://github.com/BurntSushi/migration

@@ -38,6 +38,7 @@ This is an example of how to run tests off the command line:
 	set GOPATH=%CD%
 	go test -race github.com/IMQS/authaus -test.cpu 2
 	go test -race github.com/IMQS/authaus -test.cpu 2 -backend_postgres
+	go test -race github.com/IMQS/authaus -test.cpu 2 -backend_ldap
 	go test -race github.com/IMQS/imqsauth/imqsauth -test.cpu 2
 	ruby src/github.com/IMQS/imqsauth/resttest.rb
 
