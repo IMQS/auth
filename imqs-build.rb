@@ -34,16 +34,18 @@ case ARGV[0]
 		# The very first test that executes against the postgres backend must run with
 		# just 1 CPU. This is to ensure that if migrations need to run, then they do so
 		# before anything else runs.
-		exec_or_die( "go test github.com/IMQS/authaus -test.cpu 1 -backend_postgres" )
+		exec_or_die( "go test github.com/IMQS/authaus -test.cpu 1 -backend_postgres -run TestAuth" )
 
 		# At present the tests behave no differently when run with -race and without,
 		# but it's a likely thing to do in future. ie.. make some stress tests run only with -race off,
 		# because -race uses 10x the memory and is 10x slower.
-		exec_or_die( "go test -race github.com/IMQS/authaus -test.cpu 2" )
-		exec_or_die( "go test -race github.com/IMQS/authaus -test.cpu 2 -backend_postgres" )
+		exec_or_die( "go test -race github.com/IMQS/authaus -test.cpu 2 -run TestAuth" )
+		exec_or_die( "go test -race github.com/IMQS/authaus -test.cpu 2 -backend_postgres -run TestAuth" )
+        exec_or_die( "go test -race github.com/IMQS/authaus -test.cpu 2 -backend_ldap -run TestIntegratedLdap" )
 		exec_or_die( "go test -race github.com/IMQS/imqsauth/imqsauth -test.cpu 2" )
-		exec_or_die( "go test github.com/IMQS/authaus -test.cpu 2" )
-		exec_or_die( "go test github.com/IMQS/authaus -test.cpu 2 -backend_postgres" )
+		exec_or_die( "go test github.com/IMQS/authaus -test.cpu 2 -run TestAuth" )
+		exec_or_die( "go test github.com/IMQS/authaus -test.cpu 2 -backend_postgres -run TestAuth" )
+        exec_or_die( "go test github.com/IMQS/authaus -test.cpu 2 -backend_ldap -run TestIntegratedLdap" )
 		exec_or_die( "go test github.com/IMQS/imqsauth/imqsauth -test.cpu 2" )
 		exec_or_die( "ruby src/github.com/IMQS/imqsauth/resttest.rb" )
 	when "test_integration" then
