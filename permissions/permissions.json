@@ -24,8 +24,9 @@
     "114": {"v": "pcsDynamicContent",					"n": "Dynamic Content",						"m": "PCS",		                    "a": true,			"d": "User is allowed to get dynamic configuration"},
     "115": {"v": "pcsProjectsUnassignedView",			"n": "Projects Unassigned View",			"m": "PCS",		                    "a": true,			"d": "User is allowed to view all the projects that are not assigned to programmes"},
     "116": {"v": "pcsBudgetItemsAvailable",				"n": "Budget Items Available",				"m": "PCS",		                    "a": true,			"d": "User is allowed to view the allocatable budget items"},
-    "200": {"v": "reportCreator",						"n": "Report Creator",						"m": "PCS",		                    "a": true,			"d": "Can create reports"},
-    "201": {"v": "reportViewer",						"n": "Report Viewer",						"m": "PCS",		                    "a": true,			"d": "Can view reports"},
+    
+    "200": {"v": "reportCreator",						"n": "Report Creator",						"m": "GLOBAL",		                "a": true,			"d": "Can create reports"},
+    "201": {"v": "reportViewer",						"n": "Report Viewer",						"m": "GLOBAL",		                "a": true,			"d": "Can view reports"},
 
     "300": {"v": "importer",							"n": "Importer",							"m": "GLOBAL",	                    "a": true,			"d": "User is allowed to handle data imports"},
     "301": {"v": "fileDrop",							"n": "File Drop",							"m": "GLOBAL",	                    "a": true,			"d": "User is allowed to drop files onto IMQS Web"},
