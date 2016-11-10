@@ -31,7 +31,7 @@
     "300": {"v": "importer",							"n": "Importer",							"m": "GLOBAL",	                    "a": true,			"d": "User is allowed to handle data imports"},
     "301": {"v": "fileDrop",							"n": "File Drop",							"m": "GLOBAL",	                    "a": true,			"d": "User is allowed to drop files onto IMQS Web"},
 
-    "400": {"v": "mm",				                    "n": "Maintenance Management",				"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "MM"},
+    "400": {"v": "mm",									"n": "Maintenance Management",				"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "MM"},
     "401": {"v": "mmWorkRequestView",					"n": "Work Request View",					"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "Work Request View"},
     "402": {"v": "mmWorkRequestAddAndDelete",			"n": "Work Request Add/Delete",				"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "Work Request Add/Delete"},
     "403": {"v": "mmWorkRequestUpdate",					"n": "Work Request Update",					"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "Work Request Update"},
@@ -65,9 +65,18 @@
     "503": {"v": "wipProjectSuspend",					"n": "Project Suspend",						"m": "WIP",		                    "a": true,			"d": "User is allowed to suspend a workflow"},
     "504": {"v": "wipProjectDiscard",					"n": "Project Discard",						"m": "WIP",		                    "a": true,			"d": "User is allowed to discard a workflow"},
 
-    "600": {"v": "energySiteConfigAddAndDelete",		"n": "Energy Site Config Add/Delete",		"m": "ENERGY",                      "a": true,			"d": "User is allowed to add and delete an energy site configuration"},
-    "601": {"v": "energySiteConfigUpdate",		        "n": "Energy Site Update",		            "m": "ENERGY",                      "a": true,			"d": "User is allowed to update an energy site configuration"},
-    "602": {"v": "energySiteConfigView",		        "n": "Energy Site Config View",		        "m": "ENERGY",                      "a": true,			"d": "User is allowed to view an energy site configuration"},
+    "600": {"v": "energyConfigAddAndDelete",				"n": "Config Add/Delete",				"m": "ENERGY",						"a": true,			"d": "User is allowed to add and delete an energy site configuration"},
+    "601": {"v": "energyConfigUpdate",						"n": "Config Update",					"m": "ENERGY",						"a": true,			"d": "User is allowed to update an energy site configuration"},
+    "602": {"v": "energyConfigView",						"n": "Config View",						"m": "ENERGY",						"a": true,			"d": "User is allowed to view an energy site configuration"},
+    "603": {"v": "energyConfigLockUnlock",					"n": "Config Lock/Unlock",				"m": "ENERGY",						"a": true,			"d": "User is allowed to start/stop generators"},
+    "604": {"v": "energyGeneratorsStartStop",				"n": "Generators Start/Stop",			"m": "ENERGY",						"a": true,			"d": "User is allowed to start/stop generators"},
+    "605": {"v": "energyGateLockOpen",						"n": "Gate Lock Open",					"m": "ENERGY",						"a": true,			"d": "User is allowed to open gate lock"},
+    "606": {"v": "energySimSwitch",							"n": "SIM Switch",						"m": "ENERGY",						"a": true,			"d": "User is allowed to switch site controller SIM"},
+    "607": {"v": "energyAlarmsMute",						"n": "Alarms Mute",						"m": "ENERGY",						"a": true,			"d": "User is allowed to mute site alarms"},
+    "608": {"v": "energyAnalogDataRefresh",					"n": "Analog Data Refresh",				"m": "ENERGY",						"a": true,			"d": "User is allowed to request latest analog data"},
+    "609": {"v": "energyControllerFirmwareVersionRefresh",	"n": "Controller FW Version Refresh",	"m": "ENERGY",						"a": true,			"d": "User is allowed to request controller firmware version"},
+    "610": {"v": "energyTimeSync",							"n": "Time Sync",						"m": "ENERGY",						"a": true,			"d": "User is allowed to synchronise controller clock with server"},
+    "611": {"v": "energyAlarmsAcknowledge",					"n": "Alarms Acknowledge",				"m": "ENERGY",						"a": true,			"d": "User is allowed to acknowledge alarms"},
 
     "999": {"v": "imqsDeveloper",						"n": "IMQS Developer",						"m": "GLOBAL",	                    "a": true,			"d": "IMQS Developer"}
   }
