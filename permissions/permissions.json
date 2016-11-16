@@ -59,7 +59,7 @@
     "425": {"v": "mmSetupPM",							"n": "Setup PM",							"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "MM Setup Preventative Maintenance"},
     "426": {"v": "mmSetupPMSchedule",					"n": "Setup PM Schedule",					"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "MM Setup Preventative Maintenance Schedule"},
 
-    "500": {"v": "wipEnabled",							"n": "Enabled",								"m": "WIP",		                    "a": true,			"d": "User is allowed to use the WIP module"},
+    "500": {"v": "wipEnabled",							"n": "Work In Progress",					"m": "WIP",		                    "a": true,			"d": "User is allowed to use the WIP module"},
     "501": {"v": "wipWorkflowStart",					"n": "Workflow Start",						"m": "WIP",		                    "a": true,			"d": "User is allowed to start a workflow"},
     "502": {"v": "wipWorkflowSuspend",					"n": "Workflow Suspend",					"m": "WIP",		                    "a": true,			"d": "User is allowed to suspend a workflow"},
     "503": {"v": "wipWorkflowDiscard",					"n": "Workflow Discard",					"m": "WIP",		                    "a": true,			"d": "User is allowed to discard a workflow"},
