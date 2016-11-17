@@ -77,7 +77,8 @@
     "609": {"v": "energyControllerFirmwareVersionRefresh",	"n": "Controller FW Version Refresh",	"m": "ENERGY",						"a": true,			"d": "User is allowed to request controller firmware version"},
     "610": {"v": "energyTimeSync",							"n": "Time Sync",						"m": "ENERGY",						"a": true,			"d": "User is allowed to synchronise controller clock with server"},
     "611": {"v": "energyAlarmsAcknowledge",					"n": "Alarms Acknowledge",				"m": "ENERGY",						"a": true,			"d": "User is allowed to acknowledge alarms"},
-
+    "612": {"v": "energyGateAccessFirmwareVersionRefresh",	"n": "Gate Access FW Version Refresh",	"m": "ENERGY",						"a": true,			"d": "User is allowed to request gate access firmware version"},
+    
     "999": {"v": "imqsDeveloper",						"n": "IMQS Developer",						"m": "GLOBAL",	                    "a": true,			"d": "IMQS Developer"}
   }
 }
