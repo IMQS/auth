@@ -79,15 +79,16 @@
     "600": {"v": "energyConfigAddAndDelete",				"n": "Config Add/Delete",				"m": "ENERGY",						"a": true,			"d": "User is allowed to add and delete an energy site configuration"},
     "601": {"v": "energyConfigUpdate",						"n": "Config Update",					"m": "ENERGY",						"a": true,			"d": "User is allowed to update an energy site configuration"},
     "602": {"v": "energyConfigView",						"n": "Config View",						"m": "ENERGY",						"a": true,			"d": "User is allowed to view an energy site configuration"},
-    "603": {"v": "energyConfigLockUnlock",					"n": "Config Lock/Unlock",				"m": "ENERGY",						"a": true,			"d": "User is allowed to start/stop generators"},
+    "603": {"v": "energyConfigLockUnlock",					"n": "Config Lock/Unlock",				"m": "ENERGY",						"a": true,			"d": "User is allowed to lock/unlock site configuration"},
     "604": {"v": "energyGeneratorsStartStop",				"n": "Generators Start/Stop",			"m": "ENERGY",						"a": true,			"d": "User is allowed to start/stop generators"},
-    "605": {"v": "energyGateLockOpen",						"n": "Gate Lock Open",					"m": "ENERGY",						"a": true,			"d": "User is allowed to open gate lock"},
+    "605": {"v": "energyGateUnlock",						"n": "Gate Unlock",						"m": "ENERGY",						"a": true,			"d": "User is allowed to unlock gate"},
     "606": {"v": "energySimSwitch",							"n": "SIM Switch",						"m": "ENERGY",						"a": true,			"d": "User is allowed to switch site controller SIM"},
     "607": {"v": "energyAlarmsMute",						"n": "Alarms Mute",						"m": "ENERGY",						"a": true,			"d": "User is allowed to mute site alarms"},
-    "608": {"v": "energyAnalogDataRefresh",					"n": "Analog Data Refresh",				"m": "ENERGY",						"a": true,			"d": "User is allowed to request latest analog data"},
-    "609": {"v": "energyControllerFirmwareVersionRefresh",	"n": "Controller FW Version Refresh",	"m": "ENERGY",						"a": true,			"d": "User is allowed to request controller firmware version"},
+    "608": {"v": "energyAnalogDataRefresh",					"n": "Analog Data Refresh",				"m": "ENERGY",						"a": true,			"d": "User is allowed to refresh analog data"},
+    "609": {"v": "energyControllerFirmwareVersionRefresh",	"n": "Controller FW Version Refresh",	"m": "ENERGY",						"a": true,			"d": "User is allowed to refresh controller firmware version"},
     "610": {"v": "energyTimeSync",							"n": "Time Sync",						"m": "ENERGY",						"a": true,			"d": "User is allowed to synchronise controller clock with server"},
     "611": {"v": "energyAlarmsAcknowledge",					"n": "Alarms Acknowledge",				"m": "ENERGY",						"a": true,			"d": "User is allowed to acknowledge alarms"},
+    "612": {"v": "energyGateAccessFirmwareVersionRefresh",	"n": "Gate Access FW Version Refresh",	"m": "ENERGY",						"a": true,			"d": "User is allowed to refresh gate access firmware version"},
 
     "999": {"v": "imqsDeveloper",						"n": "IMQS Developer",						"m": "GLOBAL",	                    "a": true,			"d": "IMQS Developer"}
   }
