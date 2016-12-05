@@ -26,9 +26,11 @@ end
 case ARGV[0]
 	when "build" then
 		# 'build' exists solely for CI integration. We can't use "prepare" in that case, because "../out/bin" doesn't exist on a CI build.
+		# OK.. this is now a legacy thing, after having creating the "copy_out" phase.
 		exec_or_die( "go install github.com/IMQS/imqsauth" )
 	when "prepare" then
 		exec_or_die( "go install github.com/IMQS/imqsauth" )
+	when "copy_out" then
 		FileUtils.cp( "bin/imqsauth.exe", out_dir + '/bin/' )
 	when "test_unit" then
 		# The very first test that executes against the postgres backend must run with
