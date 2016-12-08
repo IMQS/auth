@@ -49,3 +49,6 @@
 [submodule "src/github.com/BurntSushi/migration"]
 	path = src/github.com/BurntSushi/migration
 	url = https://github.com/BurntSushi/migration
+[submodule "src/github.com/IMQS/serviceconfigsgo"]
+	path = src/github.com/IMQS/serviceconfigsgo
+	url = git@github.com:IMQS/serviceconfigsgo.git
