@@ -1,0 +1,26 @@
+{
+  "modules": [
+    {"name": "IMQS"},
+    {"name": "Global"},
+    {"name": "Assets"},
+    {"name": "COGTA"},
+    {"name": "Condition Assessment"},
+    {"name": "Electricity"},
+    {"name": "Electricity Demand"},
+    {"name": "Electricity Demo"},
+    {"name": "Energy"},
+    {"name": "Indigent"},
+    {"name": "Land Use"},
+    {"name": "Maintenance Management"},
+    {"name": "PCS"},
+    {"name": "Roads"},
+    {"name": "Sewer"},
+    {"name": "Sewer PRP"},
+    {"name": "Stormwater"},
+    {"name": "Telcos"},
+    {"name": "Water"},
+    {"name": "Water Demand"},
+    {"name": "Water PRP"},
+    {"name": "WIP"}
+  ]
+}
