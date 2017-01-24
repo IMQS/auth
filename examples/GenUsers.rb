@@ -20,6 +20,6 @@ out_file.write(temp + ",")													# surname
 out_file.write(temp + RandomWordGenerator.word + "@filler.co.za,")			# email
 out_file.write(",")															# mobile
 out_file.write("reportviewer,")												# groups
-out_file.write(temp)
+out_file.write(temp)														# password
 
 out_file.close()
