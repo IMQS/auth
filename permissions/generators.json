@@ -7,7 +7,7 @@
         "ENUMS": "|permission| code = code + \"\\t#{camel_to_snake(permissions[permission]['v']).upcase}(#{permission}, \\\"#{permissions[permission]['n']} \\\", \\\"#{permissions[permission]['d']}\\\"),\n\""
       },
       "post_proc": "class_shell = class_shell.sub(\",\n\n\tprivate\", \";\n\n\tprivate\")",
-      "target_path": "/common/src/main/java/za/co/imqs/common/security/Permissions.java"
+      "target_path": "/common/common/src/main/java/za/co/imqs/common/security/Permissions.java"
     },
     {
       "name": "golang",
