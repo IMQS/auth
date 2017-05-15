@@ -67,7 +67,7 @@
     "433": {"v": "mmTimeAndCostUpdate",					"n": "Time and Cost Update",				"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "MM Time and Cost Update"},
     "434": {"v": "mmDocuments",							"n": "Documents",							"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "MM Documents"},
     "435": {"v": "mmMeterMaintenance",					"n": "Meter Maintenance",					"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "MM Meter Maintenance Map"},
-    "436": {"v": "reAssign",							"n": "Re-Assign",							"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "Disabled dynamic controls become active with this permission"},
+    "436": {"v": "mmReAssignEditOfDisabledControl",		"n": "Re-Assign Editing of Disabled Controls",	"m": "MAINTENANCE_MANAGEMENT",	"a": true,			"d": "Disabled controls become active for a user with this permission"},
 
     "500": {"v": "wipEnabled",							"n": "Work In Progress",					"m": "WIP",		                    "a": true,			"d": "User is allowed to use the WIP module"},
     "501": {"v": "wipWorkflowStart",					"n": "Workflow Start",						"m": "WIP",		                    "a": true,			"d": "User is allowed to start a workflow"},
