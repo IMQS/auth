@@ -127,6 +127,8 @@
     "610": {"v": "energyTimeSync",							"n": "Time Sync",						"m": "ENERGY",						"a": true,			"d": "User is allowed to synchronise controller clock with server"},
     "611": {"v": "energyAlarmsAcknowledge",					"n": "Alarms Acknowledge",				"m": "ENERGY",						"a": true,			"d": "User is allowed to acknowledge alarms"},
     "612": {"v": "energyGateAccessFirmwareVersionRefresh",	"n": "Gate Access FW Version Refresh",	"m": "ENERGY",						"a": true,			"d": "User is allowed to refresh gate access firmware version"},
+    "613": {"v": "energySiteInfoEdit",						"n": "Site Info Edit",					"m": "ENERGY",						"a": true,			"d": "User is allowed to edit site info"},
+    "614": {"v": "energySitePACEdit",						"n": "Site PAC Edit",					"m": "ENERGY",						"a": true,			"d": "User is allowed to edit site PAC"},
 
     "999": {"v": "imqsDeveloper",						"n": "IMQS Developer",						"m": "GLOBAL",	                    "a": true,			"d": "IMQS Developer"}
   }
