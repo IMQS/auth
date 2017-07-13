@@ -92,6 +92,9 @@
     "458": {"v": "mmIncidentLoggerView",				"n": "Incident Logger View",				"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "MM Incident Logger View"},
     "459": {"v": "mmIncidentLoggerAddAndDelete",		"n": "Incident Logger Add/Delete",			"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "MM Incident Logger Add/Delete"},
     "460": {"v": "mmIncidentLoggerUpdate",				"n": "Incident Logger Update",				"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "MM Incident Logger Update"},
+	"461": {"v": "mmLeaveManagementView",				"n": "Leave Management View",				"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "MM Leave Management View"},
+    "462": {"v": "mmLeaveManagementAddAndDelete",		"n": "Leave Management Add/Delete",			"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "MM Leave Management Add/Delete"},
+    "463": {"v": "mmLeaveManagementUpdate",				"n": "Leave Management Update",				"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "MM Leave Management Update"},
 
     "500": {"v": "wipEnabled",							"n": "Work In Progress",					"m": "WIP",		                    "a": true,			"d": "User is allowed to use the WIP module"},
     "501": {"v": "wipWorkflowStart",					"n": "Workflow Start",						"m": "WIP",		                    "a": true,			"d": "User is allowed to start a workflow"},
