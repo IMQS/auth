@@ -95,6 +95,12 @@
 	"461": {"v": "mmLeaveManagementView",				"n": "Leave Management View",				"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "MM Leave Management View"},
     "462": {"v": "mmLeaveManagementAddAndDelete",		"n": "Leave Management Add/Delete",			"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "MM Leave Management Add/Delete"},
     "463": {"v": "mmLeaveManagementUpdate",				"n": "Leave Management Update",				"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "MM Leave Management Update"},
+	"464": {"v": "mmProjectCodeManagementView",			"n": "Project Code Management View",		"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "MM Project Code Management View"},
+    "465": {"v": "mmProjectCodeManagementAddAndDelete",	"n": "Project Code Management Add/Delete",	"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "MM Project Code Management Add/Delete"},
+    "466": {"v": "mmProjectCodeManagementUpdate",		"n": "Project Code Management Update",		"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "MM Project Code Management Update"},
+	"467": {"v": "mmProjectSapManagementView",			"n": "Project Sap Management View",			"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "MM Project Sap Management View"},
+    "468": {"v": "mmProjectSapManagementAddAndDelete",	"n": "Project Sap Management Add/Delete",	"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "MM Project Sap Management Add/Delete"},
+    "469": {"v": "mmProjectSapManagementUpdate",		"n": "Project Sap Management Update",		"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "MM Project Sap Management Update"},
 
     "500": {"v": "wipEnabled",							"n": "Work In Progress",					"m": "WIP",		                    "a": true,			"d": "User is allowed to use the WIP module"},
     "501": {"v": "wipWorkflowStart",					"n": "Workflow Start",						"m": "WIP",		                    "a": true,			"d": "User is allowed to start a workflow"},
