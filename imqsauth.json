@@ -1,0 +1,65 @@
+{
+	"Authaus": {
+		"Log": {
+			"Filename": "/etc/imqs/imqsauth.log"
+		},
+		"HTTP": {
+			"Bind": "0.0.0.0",
+			"Port": 2003
+		},
+		"Authenticator": {
+			"Type": "db",
+			"DB": {
+				"Driver": "postgres",
+				"Host": "db",
+				"Database": "auth",
+				"User": "auth",
+				"Password": "auth"
+			}
+		},
+		"PermitDB": {
+			"DB": {
+				"Driver": "postgres",
+				"Host": "db",
+				"Database": "auth",
+				"User": "auth",
+				"Password": "auth"
+			}
+		},
+		"SessionDB": {
+			"DB": {
+				"Driver": "postgres",
+				"Host": "db",
+				"Database": "auth",
+				"User": "auth",
+				"Password": "auth"
+			}
+		},
+		"RoleGroupDB": {
+			"DB": {
+				"Driver": "postgres",
+				"Host": "db",
+				"Database": "auth",
+				"User": "auth",
+				"Password": "auth"
+			}
+		},
+		"UserStore": {
+			"Type": "db",
+			"DB": {
+				"Driver": "postgres",
+				"Host": "db",
+				"Database": "auth",
+				"User": "auth",
+				"Password": "auth"
+			}
+		}
+	},
+	"Yellowfin": {
+		"Enabled": false,
+		"Url": "http://localhost/yellowfin/"
+	},
+	"SendMailPassword": "BpLnfgDsc2WD8F2q",
+	"HostnameFile": "hostname",
+	"NotificationUrl": "http://localhost:8081/notify/"
+}
