@@ -35,7 +35,7 @@ end.parse!
 
 
 puts("Building binary")
-exec_or_die("docker run --rm -e GOPATH=/usr/src/auth -v #{Dir.pwd}:/usr/src/auth -w /usr/src/auth golang:1.8 go install -ldflags \"-linkmode external -extldflags -static\" github.com/IMQS/imqsauth
+exec_or_die("docker run --rm -e GOPATH=/usr/src/auth -v \"#{Dir.pwd}\":/usr/src/auth -w /usr/src/auth golang:1.8 go install -ldflags \"-linkmode external -extldflags -static\" github.com/IMQS/imqsauth
 ")
 puts("Building image")
 exec_or_die("docker build -t #{image_name}:#{options[:dockertag]} .")
