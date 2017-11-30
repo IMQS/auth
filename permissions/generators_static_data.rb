@@ -158,12 +158,14 @@ namespace iq {
 
 		export class Permission {
 			id: string;
+			name: string;
 			friendlyName: string;
 			description: string;
 			module: AuthModule;
 
-			constructor(id: string, friendlyName: string, description: string, module: AuthModule) {
+			constructor(id: string, name: string, friendlyName: string, description: string, module: AuthModule) {
 				this.id = id;
+				this.name = name;
 				this.friendlyName = friendlyName;
 				this.description = description;
 				this.module = module;
@@ -228,7 +230,7 @@ Generators = {
 	"typescript" => {
 		:template => typescript_template,
 		:procs => {
-			"ENUMS" => lambda { |enum, perm, islast| enum == 0 ? "" : "\t\t\t#{perm['v']}: new iq.auth.Permission(\"#{enum}\", \"#{perm['n']}\", \"#{perm['d']}\", AuthModule.#{perm['m']})," }
+			"ENUMS" => lambda { |enum, perm, islast| enum == 0 ? "" : "\t\t\t#{perm['v']}: new iq.auth.Permission(\"#{enum}\", \"#{perm['v']}\", \"#{perm['n']}\", \"#{perm['d']}\", AuthModule.#{perm['m']})," }
 		}
 	}
 }
