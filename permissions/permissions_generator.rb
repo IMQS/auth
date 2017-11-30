@@ -5,7 +5,11 @@ require 'fileutils'
 require_relative 'generators_static_data'
 
 def infrastructurebuild_root
-  return File.dirname(File.dirname(File.dirname(__FILE__)))
+  root = File.dirname(File.dirname(File.dirname(__FILE__)))
+  if root === '.'
+    root = File.dirname(File.dirname(__dir__))
+  end
+  return root
 end
 
 def generate_permissions
