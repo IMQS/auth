@@ -122,6 +122,7 @@
 	"523": {"v": "wipBudgetAdd",						"n": "Budget Add",							"m": "WIP",				"a": true,			"d": "User is allowed to add a WIP budget"},
 	"524": {"v": "wipBudgetEdit",						"n": "Budget Edit",							"m": "WIP",				"a": true,			"d": "User is allowed to edit a WIP budget"},
 	"525": {"v": "wipBudgetDelete",						"n": "Budget Delete",						"m": "WIP",				"a": true,			"d": "User is allowed to delete a WIP budget"},
+	"526": {"v": "wipCapitalize",						"n": "Capitalize",							"m": "WIP",				"a": true,			"d": "User is allowed to perform capitalization tasks"},
 
 	"600": {"v": "energyConfigAddAndDelete",				"n": "Config Add/Delete",				"m": "ENERGY",						"a": true,			"d": "User is allowed to add and delete an energy site configuration"},
 	"601": {"v": "energyConfigUpdate",						"n": "Config Update",					"m": "ENERGY",						"a": true,			"d": "User is allowed to update an energy site configuration"},
