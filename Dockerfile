@@ -1,4 +1,4 @@
-FROM alpine:3.5
+FROM imqs/ubuntu-base
 RUN mkdir -p /etc/imqsbin
 RUN mkdir -p /var/log/imqs/
 RUN mkdir -p /var/imqs/secrets
