@@ -5,5 +5,5 @@ RUN mkdir -p /var/imqs/secrets
 COPY bin/imqsauth /opt/imqsauth
 ENV IMQS_CONTAINER=true
 EXPOSE 80
-ENTRYPOINT ["/opt/imqsauth"]
+ENTRYPOINT ["wait-for-nc.sh", "config:80", "--", "wait-for-postgres.sh", "db", "/opt/imqsauth"]
 
