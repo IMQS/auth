@@ -140,7 +140,21 @@
 	"613": {"v": "energySiteInfoEdit",						"n": "Site Info Edit",					"m": "ENERGY",						"a": true,			"d": "User is allowed to edit site info"},
 	"614": {"v": "energySitePACEdit",						"n": "Site PAC Edit",					"m": "ENERGY",						"a": true,			"d": "User is allowed to edit site PAC"},
 
-	"999": {"v": "imqsDeveloper",						"n": "IMQS Developer",						"m": "GLOBAL",						"a": true,			"d": "IMQS Developer"},
+	"700": {"v": "devconProjectEdit",						"n": "Edit Projects",					"m": "DEVELOPMENT_CONTROL",		"a": true,			"d": "User is allowed to edit projects"},
+	"701": {"v": "devconProjectCreate",						"n": "Create new Projects",				"m": "DEVELOPMENT_CONTROL",		"a": true,			"d": "User is allowed to create new projects"},
+	"702": {"v": "devconProjectDelete",						"n": "Delete Projects",					"m": "DEVELOPMENT_CONTROL",		"a": true,			"d": "User is allowed to delete projects"},
+	"703": {"v": "devconProjectMerge",						"n": "Merge Projects",					"m": "DEVELOPMENT_CONTROL",		"a": true,			"d": "User is allowed to merge projects"},
+	"704": {"v": "devconApplicationEdit",					"n": "Edit Applications",				"m": "DEVELOPMENT_CONTROL",		"a": true,			"d": "User is allowed to edit applications"},
+	"705": {"v": "devconApplicationCreate",					"n": "Create new Application",			"m": "DEVELOPMENT_CONTROL",		"a": true,			"d": "User is allowed to create new applications"},
+	"706": {"v": "devconApplicationDelete",					"n": "Delete Applications",				"m": "DEVELOPMENT_CONTROL",		"a": true,			"d": "User is allowed to delete applications"},
+	"707": {"v": "devconLookupEdit",						"n": "Edit Lookups",					"m": "DEVELOPMENT_CONTROL",		"a": true,			"d": "User is allowed to edit lookups, such as applicant and organisation"},
+	"708": {"v": "devconLookupCreate",						"n": "Create new Lookups",				"m": "DEVELOPMENT_CONTROL",		"a": true,			"d": "User is allowed to create new lookups"},
+	"709": {"v": "devconLookupDelete",						"n": "Delete Lookups",					"m": "DEVELOPMENT_CONTROL",		"a": true,			"d": "User is allowed to delete lookups"},
+	"710": {"v": "devconLookupManagement",					"n": "Lookup Management",				"m": "DEVELOPMENT_CONTROL",		"a": true,			"d": "User is allowed to access the lookup management page and manage lookups"},
+	"711": {"v": "devconTemplateManagement",				"n": "Feedback Template Management",	"m": "DEVELOPMENT_CONTROL",		"a": true,			"d": "User is allowed to access the feedback template management page and update templates"},
+	"712": {"v": "devconReportViewing",						"n": "Report Viewing",					"m": "DEVELOPMENT_CONTROL",		"a": true,			"d": "User is allowed to view reports"},
+
+	"999": {"v": "imqsDeveloper",							"n": "IMQS Developer",				"m": "GLOBAL",						"a": true,			"d": "IMQS Developer"},
 
 	"1100": {"v": "assetsModuleAccess",						"n": "Assets",						"m": "ASSETS",						"a": true,			"d": "User is allowed to access the Assets module"},
 	"1101": {"v": "cogtaModuleAccess",						"n": "COGTA",						"m": "COGTA",						"a": true,			"d": "User is allowed to access the COGTA module"},
@@ -165,7 +179,8 @@
 	"1120": {"v": "waterModuleAccess",						"n": "Water",						"m": "WATER",						"a": true,			"d": "User is allowed to access the Water module"},
 	"1121": {"v": "waterDemandModuleAccess",				"n": "Water Demand",				"m": "WATER_DEMAND",				"a": true,			"d": "User is allowed to access the Water Demand module"},
 	"1122": {"v": "waterPRPModuleAccess",					"n": "Water PRP",					"m": "WATER_PRP",					"a": true,			"d": "User is allowed to access the Water PRP module"},
-	"1123": {"v": "wipModuleAccess",						"n": "WIP",							"m": "WIP",							"a": true,			"d": "User is allowed to access the WIP module"}
+	"1123": {"v": "wipModuleAccess",						"n": "WIP",							"m": "WIP",							"a": true,			"d": "User is allowed to access the WIP module"},
+	"1124": {"v": "developmentControlModuleAccess",			"n": "Development Control",			"m": "DEVELOPMENT_CONTROL",			"a": true,			"d": "User is allowed to access the Development Control module"}
 
 		}
 }
