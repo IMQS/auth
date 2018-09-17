@@ -153,51 +153,45 @@ typescript_template = <<END
  *
  * https://imqssoftware.atlassian.net/wiki/display/ASC/Generating+Permissions
  */
-namespace iq {
-	export namespace auth {
+import { AuthModule } from './modules';
+import { LocalStorageKeys } from "../js-base/defs";
 
-		export class Permission {
-			id: string;
-			name: string;
-			friendlyName: string;
-			description: string;
-			module: AuthModule;
+export class Permission {
+	id: string;
+	name: string;
+	friendlyName: string;
+	description: string;
+	module: AuthModule;
 
-			constructor(id: string, name: string, friendlyName: string, description: string, module: AuthModule) {
-				this.id = id;
-				this.name = name;
-				this.friendlyName = friendlyName;
-				this.description = description;
-				this.module = module;
-			}
-		}
+	constructor(id: string, name: string, friendlyName: string, description: string, module: AuthModule) {
+		this.id = id;
+		this.name = name;
+		this.friendlyName = friendlyName;
+		this.description = description;
+		this.module = module;
+	}
+}
 
-		// List of permissions in imqsauth project (search for 'PermissionsTable')
-		export const Permissions = {
+// List of permissions in imqsauth project (search for 'PermissionsTable')
+export const Permissions = {
 ENUMS
-		};
+};
 
-		/** @suppress {suspiciousCode} */
-		export let permissionsArray: iq.auth.Permission[];
+/** @suppress {suspiciousCode} */
+export let permissionsArray: Permission[];
 
-		// populate RoleArray
-		(function () {
-			iq.auth.permissionsArray = [];
-			for (let key in iq.auth.Permissions) {
-				if (iq.auth.Permissions.hasOwnProperty(key)) {
-					iq.auth.permissionsArray.push(iq.auth.Permissions[key]);
-				}
-			}
-		}());
-
-		export function getPermissionByID(id: string): iq.auth.Permission {
-			for (let i = 0; i < iq.auth.permissionsArray.length; i++) {
-				if (iq.auth.permissionsArray[i].id === id)
-					return iq.auth.permissionsArray[i];
-			}
-			return null;
+// populate RoleArray
+(function () {
+	permissionsArray = [];
+	for (const key in Permissions) {
+		if (Permissions.hasOwnProperty(key)) {
+			permissionsArray.push(Permissions[key]);
 		}
 	}
+}());
+
+export function getPermissionByID(id: string): Permission {
+	return permissionsArray.find((permission) => { return id === permission.id; });
 }
 END
 
@@ -230,7 +224,7 @@ Generators = {
 	"typescript" => {
 		:template => typescript_template,
 		:procs => {
-			"ENUMS" => lambda { |enum, perm, islast| enum == 0 ? "" : "\t\t\t#{perm['v']}: new iq.auth.Permission(\"#{enum}\", \"#{perm['v']}\", \"#{perm['n']}\", \"#{perm['d']}\", AuthModule.#{perm['m']})," }
+			"ENUMS" => lambda { |enum, perm, islast| enum == 0 ? "" : "\t#{perm['v']}: new Permission(\"#{enum}\", \"#{perm['v']}\", \"#{perm['n']}\", \"#{perm['d']}\", AuthModule.#{perm['m']})" + (islast ? "" : ",") }
 		}
 	}
 }
