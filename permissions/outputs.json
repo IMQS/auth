@@ -17,6 +17,10 @@
       "target_path": "auth/src/github.com/IMQS/imqsauth/imqsauth/perms.go"
     },
     {
+      "type": "go_serviceauth",
+      "target_path": "serviceauth/permissions/permissions.go"
+    },
+    {
       "type": "typescript",
       "target_path": "www/js/auth/permissions.ts"
     }
