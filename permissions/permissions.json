@@ -30,8 +30,7 @@
 
 	"300": {"v": "importer",							"n": "Importer",							"m": "GLOBAL",						"a": true,			"d": "User is allowed to handle data imports"},
 	"301": {"v": "fileDrop",							"n": "File Drop",							"m": "GLOBAL",						"a": true,			"d": "User is allowed to drop files onto IMQS Web"},
-	"302": {"v": "hydroWorkOrderCreation",				"n": "Hydro Work Order Creation",			"m": "GLOBAL",						"a": true,			"d": "User is allowed to view and use the hydrojet work order creation tool"},
-
+	
 	"400": {"v": "mm",									"n": "Maintenance Management",				"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "MM"},
 	"401": {"v": "mmWorkRequestView",					"n": "Work Request View",					"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "Work Request View"},
 	"402": {"v": "mmWorkRequestAddAndDelete",			"n": "Work Request Add/Delete",				"m": "MAINTENANCE_MANAGEMENT",		"a": true,			"d": "Work Request Add/Delete"},
@@ -154,6 +153,8 @@
 	"710": {"v": "devconLookupManagement",					"n": "Lookup Management",				"m": "DEVELOPMENT_CONTROL",		"a": true,			"d": "User is allowed to access the lookup management page and manage lookups"},
 	"711": {"v": "devconTemplateManagement",				"n": "Feedback Template Management",	"m": "DEVELOPMENT_CONTROL",		"a": true,			"d": "User is allowed to access the feedback template management page and update templates"},
 	"712": {"v": "devconReportViewing",						"n": "Report Viewing",					"m": "DEVELOPMENT_CONTROL",		"a": true,			"d": "User is allowed to view reports"},
+
+	"800": {"v": "hydroWorkOrderCreation",					"n": "Hydro Work Order Creation",		"m": "SEWER",					"a": true,			"d": "User is allowed to view and use the hydrojet work order creation tool"},
 
 	"999": {"v": "imqsDeveloper",							"n": "IMQS Developer",				"m": "GLOBAL",						"a": true,			"d": "IMQS Developer"},
 
