@@ -3,6 +3,5 @@
 .hg
 pkg
 bin
-.vscode/
 .idea/
 *.iml
