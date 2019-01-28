@@ -186,7 +186,6 @@ typescript_template = <<END
  * https://imqssoftware.atlassian.net/wiki/display/ASC/Generating+Permissions
  */
 import { AuthModule } from './modules';
-import { LocalStorageKeys } from "../js-base/defs";
 
 export class Permission {
 	id: string;
@@ -205,7 +204,7 @@ export class Permission {
 }
 
 // List of permissions in imqsauth project (search for 'PermissionsTable')
-export const Permissions = {
+export const Permissions: { [key: string]: Permission } = {
 ENUMS
 };
 
@@ -222,7 +221,7 @@ export let permissionsArray: Permission[];
 	}
 }());
 
-export function getPermissionByID(id: string): Permission {
+export function getPermissionByID(id: string): Permission | undefined {
 	return permissionsArray.find((permission) => { return id === permission.id; });
 }
 END
