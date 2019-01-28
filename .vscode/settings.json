@@ -1,3 +1,6 @@
 {
-    "go.gopath": "${workspaceRoot}"
+	"go.gopath": "${workspaceRoot}",
+	"[plaintext]": {
+		"files.insertFinalNewline": false,
+	}
 }
