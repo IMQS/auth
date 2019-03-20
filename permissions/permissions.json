@@ -182,7 +182,7 @@
 	"1121": {"v": "waterDemandModuleAccess",				"n": "Water Demand",				"m": "WATER_DEMAND",				"a": true,			"d": "User is allowed to access the Water Demand module"},
 	"1122": {"v": "waterPRPModuleAccess",					"n": "Water PRP",					"m": "WATER_PRP",					"a": true,			"d": "User is allowed to access the Water PRP module"},
 	"1123": {"v": "wipModuleAccess",						"n": "WIP",							"m": "WIP",							"a": true,			"d": "User is allowed to access the WIP module"},
-	"1124": {"v": "developmentControlModuleAccess",			"n": "Development Control",			"m": "DEVELOPMENT_CONTROL",			"a": true,			"d": "User is allowed to access the Development Control module"}
-
+	"1124": {"v": "developmentControlModuleAccess",			"n": "Development Control",			"m": "DEVELOPMENT_CONTROL",			"a": true,			"d": "User is allowed to access the Development Control module"},
+	"1125": {"v": "roadSignsModuleAccess",					"n": "Road Signs",					"m": "ROAD_SIGNS",					"a": true,			"d": "User is allowed to access the Road Signs module"}
 		}
 }
