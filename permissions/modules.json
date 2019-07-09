@@ -11,6 +11,7 @@
     {"name": "Electricity"},
     {"name": "Electricity Demand"},
     {"name": "Electricity Demo"},
+    {"name": "Electricity RP"},
     {"name": "Energy"},
     {"name": "Indigent"},
     {"name": "Land Use"},
@@ -28,6 +29,6 @@
     {"name": "Water Demand"},
     {"name": "Water PRP"},
     {"name": "WIP"},
-    {"name": "Road Signs"}
+    {"name": "Road Signs"}    
   ]
 }
