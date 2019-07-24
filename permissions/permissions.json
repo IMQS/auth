@@ -228,7 +228,7 @@
 	"1230": {"v": "newMmTcView",										"n": "TC – View Time Sheet",									"m": "MM"	,"a": true 			,"d": "User can view a Time Sheet"},
 	"1231": {"v": "newMmTcArchive",										"n": "TC – Archive Time Sheet",									"m": "MM"	,"a": true 			,"d": "User can archive a Time Sheet"},
 	"1232": {"v": "newMmTcTimeExports",									"n": "TC – Exports",											"m": "MM"	,"a": true 			,"d": "User can export Time Sheets"},
-	"1233": {"v": "newMmTcReportsView",									"n": "TC – Reports",											"m": "MM"	,"a": true 			,"d": "User can view Incident Logger Reports"},
+	"1233": {"v": "newMmTcReportsView",									"n": "TC – Reports",											"m": "MM"	,"a": true 			,"d": "User can view Time and Cost Reports"},
 	"1234": {"v": "newMmRm",											"n": "RM – Resource Manager Module",							"m": "MM"	,"a": true 			,"d": "User can access the Resource Manager Module"},
 	"1235": {"v": "newMmRmEmployeeCreateAddEmployee",					"n": "RM – Employee – Add",										"m": "MM"	,"a": true 			,"d": "User can add a new Employee"},
 	"1236": {"v": "newMmRmEmployeeView",								"n": "RM – Employee – View",									"m": "MM"	,"a": true 			,"d": "User can view Employees grid and Employee data"},
